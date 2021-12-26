@@ -120,7 +120,6 @@ bool Curl_ssl_tls13_ciphersuites(void);
 #include "schannel.h"       /* Schannel SSPI version */
 #include "sectransp.h"      /* SecureTransport (Darwin) version */
 #include "mbedtls.h"        /* mbedTLS versions */
-#include "mesalink.h"       /* MesaLink versions */
 #include "bearssl.h"        /* BearSSL versions */
 #include "rustls.h"         /* rustls versions */
 

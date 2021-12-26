@@ -1296,8 +1296,6 @@ const struct Curl_ssl *Curl_ssl =
   &Curl_ssl_openssl;
 #elif defined(USE_SCHANNEL)
   &Curl_ssl_schannel;
-#elif defined(USE_MESALINK)
-  &Curl_ssl_mesalink;
 #elif defined(USE_BEARSSL)
   &Curl_ssl_bearssl;
 #else
@@ -1328,9 +1326,6 @@ static const struct Curl_ssl *available_backends[] = {
 #endif
 #if defined(USE_SCHANNEL)
   &Curl_ssl_schannel,
-#endif
-#if defined(USE_MESALINK)
-  &Curl_ssl_mesalink,
 #endif
 #if defined(USE_BEARSSL)
   &Curl_ssl_bearssl,
